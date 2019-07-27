@@ -31,6 +31,7 @@ lib/libqomx_core.so
 # Camera
 bin/mm-qcamera-daemon
 lib/libAlgorithm.so
+lib/libNubiaImageAlgorithmCamera.so
 lib/libalRnBLV.so
 lib/libalRnB.so
 lib/libalSDE2.so
@@ -41,11 +42,14 @@ lib/libarcsoft_beautyshot_image_algorithm.so
 lib/libarcsoft_beautyshot.so
 lib/libarcsoft_beautyshot_video_algorithm.so
 lib/libarcsoft_high_dynamic_range.so
-#lib/libarcsoft_low_light_shot.so
+lib/libarcsoft_low_light_shot.so
+lib/libarcsoft_dualcam_low_light_shot.so
 lib/libarcsoft_picauto.so
 lib64/libarcsoft_beautyshot_image_algorithm.so
 lib64/libarcsoft_beautyshot.so
 lib64/libarcsoft_beautyshot_video_algorithm.so
+lib64/libarcsoft_low_light_shot.so
+lib64/libarcsoft_dualcam_low_light_shot.so
 lib/libbuffer_manager.so
 lib/libBuffer.so
 lib/libBurstProcessJni.so
@@ -60,9 +64,11 @@ lib/libnubia_clone.so
 lib/libnubia_effect.so
 lib/libnubiajpeg.so
 lib/libnubia_trajectory.so
+lib/libNubiaImageAlgorithmBSP.so
 lib/libpanoramahelper.so
 lib/libproductinfo.so
 lib64/libAlgorithm.so
+lib64/libNubiaImageAlgorithmCamera.so
 lib64/libalRnB.so
 lib64/libalSDE2.so
 lib64/libbuffer_manager.so
@@ -78,8 +84,10 @@ lib64/libnubia_clone.so
 lib64/libnubia_effect.so
 lib64/libnubia_delay_recorder.so
 lib64/libavfilter.so
+lib64/libnubia_gallery_player.so
 lib64/libnubiajpeg.so
 lib64/libnubia_trajectory.so
+lib64/libNubiaImageAlgorithmBSP.so
 lib64/libpanoramahelper.so
 lib64/libproductinfo.so
 vendor/lib/libChamomilePA.so
@@ -174,6 +182,7 @@ vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
 vendor/lib64/libmmcamera2_stats_algorithm.so
+vendor/lib64/libmmcamera_dbg.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
@@ -305,11 +314,11 @@ vendor/lib/libchromatix_imx258_main_cpp_microspur.so
 vendor/lib/libchromatix_imx258_main_cpp_mtf_denoise.so
 vendor/lib/libchromatix_imx258_main_cpp_panorama.so
 vendor/lib/libchromatix_imx258_main_cpp_preview.so
-#vendor/lib/libchromatix_imx258_main_cpp_preview_clone.so
+vendor/lib/libchromatix_imx258_main_cpp_preview_clone.so
 vendor/lib/libchromatix_imx258_main_cpp_snapshot_electfno.so
 vendor/lib/libchromatix_imx258_main_cpp_snapshot_lightdraw.so
 vendor/lib/libchromatix_imx258_main_cpp_snapshot.so
-#vendor/lib/libchromatix_imx258_main_cpp_snapshot_clone.so
+vendor/lib/libchromatix_imx258_main_cpp_snapshot_clone.so
 vendor/lib/libchromatix_imx258_main_cpp_video_4k.so
 vendor/lib/libchromatix_imx258_main_cpp_video.so
 vendor/lib/libchromatix_imx258_main_isp_bokeh_20fps.so
@@ -377,8 +386,12 @@ etc/firmware/nubia_tp_ofilm_fw_ctct.img
 
 
 
+bin/energy-awareness
 bin/ATFWD-daemon
 vendor/bin/mdtpd
+bin/dts_configurator
+bin/seempd
+bin/qfp-daemon
 vendor/bin/seemp_healthd
 vendor/bin/qseeproxydaemon
 vendor/bin/RIDLClient.exe
@@ -386,7 +399,6 @@ bin/cnss-daemon
 bin/cnss_diag
 bin/ptt_socket_app
 bin/qcom-system-daemon
+bin/usb_uicc_client
+bin/rfs_access
 
--framework/ifaa_fingerprint.jar
-lib/libteeclientjni.so
-lib64/libteeclientjni.so
